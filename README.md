@@ -36,9 +36,9 @@ docker run \
     --name noVNC \
     --detach \
     --publish 443:6080 \
-    --cert server.pem \
-    --ssl-only \
     gotget/novnc \
+        --cert server.pem \
+        --ssl-only \
         --vnc HOST:PORT
 ```
 
